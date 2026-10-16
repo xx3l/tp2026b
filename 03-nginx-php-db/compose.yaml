@@ -1,0 +1,11 @@
+services:
+  web1:
+    container_name: nginx1
+    build: ../01-docker-hello/
+    ports:
+      - 80:80
+  web2:
+    container_name: nginx2
+    image: nginx:latest
+    ports:
+      - 81:80
